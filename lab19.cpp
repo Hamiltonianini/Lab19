@@ -1,5 +1,5 @@
 // Please include header (lab21.h) here.
-
+#include "lab19.h"
 int main(){
 	srand(time(0));
 	Unit hero,mons;
@@ -20,7 +20,7 @@ int main(){
 		player_action = toupper(player_action);
 		if(player_action == 'E') break; 
 		
-		int temp = rand()%3;
+		int temp = rand()%3;//33.33%
 		if(temp <= 1) monster_action = 'A';
 		else if(temp == 2) monster_action = 'G';
 		
